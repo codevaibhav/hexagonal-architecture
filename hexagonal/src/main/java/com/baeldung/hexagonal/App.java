@@ -22,7 +22,7 @@ public class App {
         logger.debug("Employee object saved to file successfully");
         
         Employee employee2 = new Employee();
-        employee2.setName("John Matt1");
+        employee2.setName("John Matt2");
         employee2.setAddress("Address 2, New York");
         EmployeeService employeeService2 = new EmployeeService(DatabaseEmployeeRepository.getInstance());
         employeeService2.saveEmployee(employee2);

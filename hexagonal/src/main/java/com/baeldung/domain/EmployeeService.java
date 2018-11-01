@@ -6,9 +6,9 @@ import org.slf4j.LoggerFactory;
 import com.baeldung.model.Employee;
 
 public class EmployeeService {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(EmployeeService.class);
-	
+
 	private EmployeeRepository repo;
 
 	public EmployeeService(EmployeeRepository repo) {
@@ -17,6 +17,6 @@ public class EmployeeService {
 
 	public Employee saveEmployee(Employee emp) {
 		logger.info("Inside EmployeeService.saveEmployee()");
-        return repo.saveEmployee(emp);
+		return repo.saveEmployee(emp);
 	}
 }

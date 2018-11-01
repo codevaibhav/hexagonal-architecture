@@ -9,17 +9,17 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Employee")
+@Table(name = "Employee")
 public class Employee implements Serializable {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -6365451485741046756L;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private String name; 
+	private String name;
 	private String address;
 
 	public int getId() {
